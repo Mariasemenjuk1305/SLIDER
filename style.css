@@ -1,0 +1,94 @@
+#box{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    list-style-type: none;
+}
+
+.img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+}
+.show{
+    opacity: 1;
+    z-index: 2;
+}
+.img:nth-of-type(1){
+    background-image: url(img/1920x1080_497398_[www.ArtFile.ru].jpeg);
+}
+.img:nth-of-type(2){
+    background-image: url(img/1920x1080_506441_[www.ArtFile.ru].jpeg);
+}
+.img:nth-of-type(3){
+    background-image: url(img/1920x1080_523697_[www.ArtFile.ru].jpeg);
+}
+.img:nth-of-type(4){
+    background-image: url(img/1920x1080_579472_[www.ArtFile.ru].jpeg);
+}
+.img:nth-of-type(5){
+    background-image: url(img/1920x1080_596411_[www.ArtFile.ru].jpeg);
+}
+.img:nth-of-type(6){
+    background-image: url(img/1920x1080_648255_[www.ArtFile.ru].jpeg);
+}
+#radio{
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    /* opacity: 0; */
+    z-index: 3;
+
+}
+#control{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    left: 200px;
+    top: -70px;
+    opacity: 1;
+    z-index: 4;
+}
+.right{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    opacity: 0.5;
+    position: relative;
+    left: 1200px;
+    top: -300px;
+    z-index: 3;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 16px;
+    color: white;
+    font-size: 30px;
+}
+.left{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    opacity: 0.5;
+    position: relative;
+    left: 20px;
+    top: -300px;
+    z-index: 3;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 16px;
+    font-size: 30px;
+    color: white;
+}
+.right:hover{
+    opacity: 1;
+}
+.left:hover{
+    opacity: 1;
+}
